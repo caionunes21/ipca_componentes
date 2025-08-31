@@ -1,9 +1,10 @@
 # Análise do IPCA Mensal
 
 ## 📊 Objetivo
-Analisar a variação mensal do índice oficial de preços do Brasil, e suas composições.  
+Analisar a variação mensal do índice oficial de preços do Brasil e suas grupos de composição.  
 
 **Geral**: Índice Geral  
+
 **Grupos**: 
    1. Alimentação e Bebidas
    2. Habitação
@@ -38,7 +39,7 @@ ipca <- dados |>
 ```
 
 ### 3. Visualização Gráfica
-Gráficos dos Grupos/Itens:
+Gráficos dos Grupos:
 ```r
 ggplot(ipca, aes(x = data , y = valor), size = 15) +
   geom_line(aes(group = grupo), linewidth = 1.2, color = '#F97D24') +
