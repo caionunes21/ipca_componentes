@@ -62,4 +62,4 @@ ggplot(ipca, aes(x = data , y = valor), size = 15) +
         axis.line.x = element_line(),
         axis.line.y = element_line())
 ```
-![Gráficos](IPCA_e_Componenetes.png)
+![Gráficos](IPCA e Componentes.png)
