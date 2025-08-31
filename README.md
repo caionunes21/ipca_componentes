@@ -1,8 +1,19 @@
 # Análise do IPCA Mensal
 
 ## 📊 Objetivo
-Analisar a variação mensal do índice oficial de preços do Brasil, e suas composições.
+Analisar a variação mensal do índice oficial de preços do Brasil, e suas composições.  
 
+**Geral**: Índice Geral  
+**Grupos**: 
+   1. Alimentação e Bebidas
+   2. Habitação
+   3. Artigos de Residência
+   4. Vestuário
+   5. Transportes
+   6. Saúde e Cuidados Pessoais
+   7. Despesas Pessoais
+   8. Educação
+   9. Comunicação 
 
 ## Passo a Passo da Análise
 
@@ -10,6 +21,7 @@ Analisar a variação mensal do índice oficial de preços do Brasil, e suas com
 Extração de dados do IPCA Mensal - Tabela 7060 do Sistema IBGE de Recuperação Automática (SIDRA). 
 ```r
 # Extraindo os dados com SidraR
+library(sidrar)
 dados <- get_sidra(api = '/t/7060/n1/all/v/63/p/last%2013/c315/7169,7170,7445,7486,7558,7625,7660,7712,7766,7786/d/v63%202')
 ```
 
